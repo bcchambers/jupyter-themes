@@ -1,0 +1,224 @@
+/* nord pallete */
+
+/* polar night */
+@nord0:         #2e3440;
+@nord1:         #3b4252;
+@nord2:         #434c5e;
+@nord3:         #4c566a;
+
+/* snow storm */
+@nord4:         #d8dee9;
+@nord5:         #e5e9f0;
+@nord6:         #eceff4;
+
+/* frost */
+@nord7:         #8fbcbb;
+@nord8:         #88c0d0;
+@nord9:         #81a1c1;
+@nord10:        #5e81ac;
+
+/* aurora */
+@nord11:        #bf616a;
+@nord12:        #d08770;
+@nord13:        #ebcb8b;
+@nord14:        #a3be8c;
+@nord15:        #b48ead;
+
+/* onedork base colors */
+@yellow:                @nord13;
+@orange:                @nord12;
+@red:                   @nord11;
+@magenta:               @nord15;
+@violet:                @nord15;
+@blue:                  @nord10;
+@cyan:                  @nord7;
+@green:                 @nord14;
+@code-gray:             @nord3;
+@code-fg:               @nord4;
+@code-yellow:           @yellow;
+@code-red:              @red;
+@code-violet:           @violet;
+@code-green:            @green;
+@code-blue:             @blue;
+@code-orange:           @orange;
+@code-cyan:             @cyan;
+@theme-flavor:          @nord0;
+@theme-flavor-inverse:  @nord4;
+
+/* onedork notebook colors */
+@notebook-bg:           @nord0;
+@notebook-fg:           @nord4;
+@notebook-base:         @nord0;
+
+/* jtplot figure style */
+@axisFace:              @nord1;
+@figureFace:            @notebook-bg;
+@textColor:             @notebook-fg;
+@edgeColor:             @nord1;
+@gridColor:             @nord1;
+
+/* selection, hover, prompts, brackets colors */
+@selected-bg:           @nord3;
+@selected-half:         @nord2;
+@selected-third:        @nord1;
+@selected-tenth:        @nord1;
+@selected-error:        darken(@red, 10%);
+@selected-active:       @notebook-fg;
+@navbar-selected:       @selected-active;
+@selected-fg:           @nord5;
+@selected-fg-bright:    @nord6;
+@unemphasize-fg:        @nord9;
+
+/* code, text, markdown, & tooltip colors */
+@cc-input-bg:           @notebook-bg;
+@cc-input-fg:           @notebook-fg;
+@cc-output-bg-default:  @notebook-bg;
+@cc-output-fg:          @notebook-fg;
+@text-cell-fg:          @notebook-fg;
+@unrendered-text:       @green;
+@header-fg:             @green;
+@tooltip-bg-color:      @notebook-bg;
+@tooltip-fg-color:      @notebook-fg;
+@nb-name-fg:            @header-fg;
+@nb-name-hover:         @green;
+
+/* cell border colors */
+@cc-border-selected:    @selected-bg;
+@cc-border-edit:        @notebook-fg;
+@tc-border-selected:    @nord1;
+@tc-border-edit:        @tc-border-selected;
+
+/* menus, dividers, prompt-borders, brackets */
+@divider:               @green;
+@disabled:              @nord1;
+@input-prompt:          @selected-bg;
+@input-hover-bg:        @notebook-bg;
+@prompt-hover-color:    @selected-bg;
+@prompt-line:           @nord1;
+@tc-prompt-std:         @green;
+@matching-bracket:      @selected-bg;
+@menubar-bg:            @notebook-bg;
+@menubar-fg:            @notebook-fg;
+@menubar-hover:         @dropdown-bg;
+@nb-header-bg:          @item-theme;
+@nb-header-fg:          @notebook-fg;
+@dropdown-bg:           @notebook-bg;
+@dropdown-border:       @selected-third;
+@dropdown-hover:        darken(@dropdown-bg, 2%);
+
+/* panels and form-control styles */
+@panel-header-bg:       @notebook-bg;
+@panel-bg:              @notebook-bg;
+@modal-bg:              @panel-bg;
+@alert-info-bg:         @notebook-bg;
+@form-input-bg:         @codeblock-bg;
+@form-input-border:     @codeblock-bg;
+@cmd-palette-bg:        @notebook-bg;
+@cmd-palette-form:      @notebook-bg;
+@cmd-palette-hover:     @nord1;
+
+/* buttons, widgets, kernels colors */
+@item-theme:            @green;
+@item-blue:             @blue;
+@item-cyan:             @cyan;
+@item-green:            @green;
+@item-red:              @red;
+@item-orange:           @orange;
+
+@item-danger:           @red;
+@item-success:          @green;
+@item-info:             @blue;
+@item-warning:          @orange;
+
+/* tables and dataframes colors */
+@table-color:           @notebook-fg;
+@table-bg:              @notebook-bg;
+@table-border:          @notebook-bg;
+@df-header-bg:          @notebook-bg;
+@df-header:             @notebook-fg;
+@df-header-border:      @notebook-bg;
+@df-cell-bg:            @notebook-bg;
+@codeblock-bg:          @notebook-bg;
+@codeblock-border:      @notebook-bg;
+
+/* btn, scrollbar and shadow colors */
+@button-bg:             @notebook-bg;
+@button-border:         @button-bg;
+@button-color:          @notebook-fg;
+@button-hover:          @item-theme;
+@button-hover-bg:       @nord1;
+@button-hover-border:   @button-hover-bg;
+@button-focus-bg:       @green;
+@button-focus-fg:       @notebook-fg;
+@button-panel-bg:       @panel-header-bg;
+@button-panel-hover:    @nord1;
+@scrollbar:             @nord3;
+@scroll-trough:         @nord1;
+@scrollbar-inactive:    @notebook-bg;
+@box-shadow:            @nord1;
+@md-header-link:        rgba(0,0,0,.32);
+
+/* onedork ansi colors */
+@ansiblack:             @nord1;
+@ansiblue:              @blue;
+@ansigray:              @nord3;
+@ansigreen:             @green;
+@ansipurple:            @magenta;
+@ansicyan:              @cyan;
+@ansiyellow:            @yellow;
+@ansired:               @red;
+@stderr-bg:             @red;
+@stderr-fg:             @notebook-fg;
+@js-error:              @stderr-bg;
+
+/* onedork codemirror colors */
+@cm-selected:           @nord1;
+@cm-gutters:            @notebook-bg;
+@cm-linenumber:         @input-prompt;
+@cm-comment:            @input-prompt;
+@cm-atom:               @blue;
+@cm-number:             @orange;
+@cm-property:           @blue;
+@cm-attribute:          @red;
+@cm-keyword:            @violet;
+@cm-string:             @green;
+@cm-meta:               @yellow;
+@cm-operator:           @blue;
+@cm-builtin:            @red;
+@cm-variable:           @cc-input-fg;
+@cm-variable2:          @red;
+@cm-variable3:          @violet;
+
+@cm-def:                @blue;
+@cm-error:              @selected-error;
+@cm-tag:                @blue;
+@cm-link:               @green;
+@cm-storage:            @blue;
+@cm-entity:             @blue;
+@cm-latex:              @green;
+
+
+// .rendered_html tr,
+// .rendered_html th,
+// .rendered_html td {
+//  text-align: left;
+//  vertical-align: middle;
+//  padding: 0.42em 0.47em;
+//  line-height: normal;
+//  white-space: nowrap;
+//  max-width: none;
+//  border: none;
+// }
+
+// .rendered_html tbody tr:nth-child(odd) {
+//  background: #2e3440;
+// }
+// .rendered_html tbody tr {
+//  background: #2e3440;
+// }
+// .rendered_html tbody tr:hover:nth-child(odd) {
+//  background: #2e3440;
+// }
+// .rendered_html tbody tr:hover {
+//  background: #3b4252;
+// }
